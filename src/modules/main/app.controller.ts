@@ -13,4 +13,9 @@ export class AppController {
   root(): string {
     return this.appService.root();
   }
+
+  @Get('test')
+  test(): string {
+    return 'this is test!';
+  }
 }
